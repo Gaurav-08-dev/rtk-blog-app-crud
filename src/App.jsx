@@ -5,6 +5,10 @@ import SinglePagePost from './features/posts/SinglePostPage'
 import EditPostForm from './features/posts/EditPostForm'
 import Layout from './components/Layout'
 import {Routes,Route} from "react-router-dom"
+
+import UserList from './features/users/UsersList';
+import UserPage from './features/users/UserPage';
+
 function App() {
 
   return (
