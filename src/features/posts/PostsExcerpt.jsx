@@ -19,4 +19,6 @@ const PostsExcerpt = ({ post }) => {
     )
 }
 
+// PostsExcerpt= React.memo(PostsExcerpt) //! we will use normalize state
+
 export default PostsExcerpt

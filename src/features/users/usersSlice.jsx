@@ -4,7 +4,7 @@ import axios from "axios";
 
 const USERS_URL = 'https://jsonplaceholder.typicode.com/users';
 
-const initialState=[]
+const initialState=[];
 
 export const fetchUsers=createAsyncThunk('users/fetchUsers', async()=>{
     try{
