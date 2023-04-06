@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { useSelector } from "react-redux";
-import { selectPosyById } from "./postSlice";
+import { selectPostById } from "./postSlice";
 import PostAuthor from "./PostAuthor";
 import TimeAgo from "./TimeAgo";
 import ReactionButtons from "./ReactionButtons";
@@ -10,7 +10,7 @@ import ReactionButtons from "./ReactionButtons";
 const SinglePagePost = ()=>{
     const {postId}=useParams();
 
-    const post= useSelector((state)=> selectPosyById(state,+postId))
+    const post= useSelector((state)=> selectPostById(state,+postId))
 
     if(!post) return (<section><h2>Post not found! </h2></section>)
 
